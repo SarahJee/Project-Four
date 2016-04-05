@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Photo Gallery - Treehouse Tech Degree Project 4</title>
+  <title>Responsive Lightbox/Photo Gallery - Treehouse Tech Degree Project 4</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link type="text/css" rel="stylesheet" href="css/lightgallery.css" /> 
   </head>
   <body>
 	
@@ -14,59 +15,119 @@
   	</header>
   
   	<div class ="container">
-	  	<div class="gallery-img">
-		  	<img src="img/thumbs/01.jpg" alt="Hay fields with blue skies">
-	  	</div>
+	  <div id="lightgallery">
+	  <div id="aniimated-thumbnials">
 	  	
-	  	<div class="gallery-img">
-		  	<img src="img/thumbs/02.jpg" alt="Photo of hay fields">
-	  	</div>
+	  <figure>	
+	  	<a href="img/01.jpg">
+	      <img src="img/thumbs/01.jpg" alt="Hay Fields">
+  		</a>
+  	  <figcaption></figcaption>
+	  </figure>
+	  
+	  <figure>	
+	  	<a href="img/02.jpg">
+		  	<img src="img/thumbs/02.jpg" alt="Lake">
+	  	</a>
+	  <figcaption></figcaption>
+	  </figure>
+	  
+	  <figure>	
+	  	<a href="img/03.jpg">
+		  	<img src="img/thumbs/03.jpg" alt="Canyon">
+	  	</a>
+	  <figcaption></figcaption>
+	  </figure>
+	  
+	  <figure>	
+	  	<a href="img/04.jpg">
+		  	<img src="img/thumbs/04.jpg" alt="Iceberg">
+	  	</a>
+	  <figcaption></figcaption>
+	  </figure>
 	  	
-	  	<div class="gallery-img">
-		  	<img src="img/thumbs/03.jpg" alt="Photo of lake and mountains">
-	  	</div>
-	  	
-	  	<div class="gallery-img last">
-		  	<img src="img/thumbs/04.jpg" alt="Photo of moors">
-	  	</div>
-	  	
-	  	<div class="gallery-img">
-		  	<img src="img/thumbs/05.jpg" alt="Photo of ice caps">
-	  	</div>
-	  	
-	  	<div class="gallery-img">
-		  	<img src="img/thumbs/06.jpg" alt="Photo of rocky terrain">
-	  	</div>
-	  	
-	  	<div class="gallery-img">
-		  	<img src="img/thumbs/07.jpg" alt="Photo of bushland">
-	  	</div>
-	  	
-	  	<div class="gallery-img last">
-		  	<img src="img/thumbs/08.jpg" alt="Photo of green fields and trees">
-	  	</div>
-	  	
-	  	<div class="gallery-img">
-		  	<img src="img/thumbs/09.jpg" alt="Photo of sand dunes">
-	  	</div>
-	  	
-	  	<div class="gallery-img">
-		  	<img src="img/thumbs/10.jpg" alt="Photo of country lane">
-	  	</div>
-	  	
-	  	<div class="gallery-img">
-		  	<img src="img/thumbs/11.jpg" alt="Photo of waves on rocky shore">
-	  	</div>
-	  	
-	  	<div class="gallery-img last">
-		  	<img src="img/thumbs/12.jpg" alt="Photo of scenic country view">
-	  	</div>
+	  <figure>
+	  	<a href="img/05.jpg">
+		  	<img src="img/thumbs/05.jpg" alt="Desert">
+	  	</a>
+	  <figcaption></figcaption>
+	  </figure>
+	  
+	  <figure>	
+	  	<a href="img/06.jpg">
+		  	<img src="img/thumbs/06.jpg" alt="Fall">
+	  	</a>
+	  <figcaption></figcaption>
+	  </figure>
+	  
+	  <figure>	
+	  	<a href="img/07.jpg">
+		  	<img src="img/thumbs/07.jpg" alt="Plantation">
+	  	</a>
+	  <figcaption></figcaption>
+	  </figure>
+	  
+	  <figure>	
+	  	<a href="img/08.jpg">
+		  	<img src="img/thumbs/08.jpg" alt="Dunes">
+	  	</a>
+	  <figcaption></figcaption>
+	  </figure>
+	  
+	  <figure>	
+	  	<a href="img/09.jpg">
+		  	<img src="img/thumbs/09.jpg" alt="Countryside Lane">
+	  	</a>
+	  <figcaption></figcaption>
+	  </figure>
+	  
+	  <figure>	
+	  	<a href="img/10.jpg">
+		  	<img src="img/thumbs/10.jpg" alt="Sunset">
+	  	</a>
+	  <figcaption></figcaption>
+	  </figure>
+	  
+	  <figure>
+	  	<a href="img/01.jpg">
+		  	<img src="img/thumbs/11.jpg" alt="Cave">
+	  	</a>
+	  <figcaption></figcaption>
+	  </figure>
+	  
+	  <figure>	
+	  	<a href="img/12.jpg">
+		  	<img src="img/thumbs/12.jpg" alt="Bluebells">
+	  	</a>
+	  <figcaption></figcaption>
+	  </figure>
+	  </div>
+	  </div>
 	</div><!- End container div->	
   	
   	
   	
   	
-  	
+  	<!-- jQuery version must be >= 1.8.0; -->
+    <script src="js/jquery-1.12.2.min.js"></script>
+
+    <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+    <script src="js/jquery.mousewheel.min.js"></script>
+
+    <!-- lightgallery plugins -->
+    <script src="js/lg-thumbnail.min.js"></script>
+    <script src="js/lg-fullscreen.min.js"></script>
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#lightgallery").lightGallery(); 
+    });
+    </script>
+    <script type="text/javascript">
+    $('#aniimated-thumbnials').lightGallery({
+    thumbnail:true
+	}); 
+	</script>
   	
   	
   	

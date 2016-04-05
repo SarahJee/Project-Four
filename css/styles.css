@@ -11,11 +11,11 @@ header {
 }
 
 
-.gallery-img img {
+figure img {
 	max-width: 100%;
 }
 
-.gallery-img {
+figure {
 	float: left; 
 	max-width: 100%;
 	width: 22%;
@@ -28,7 +28,7 @@ header {
 @media only screen and (max-width : 680px),
 only screen and (max-device-width : 680px) {
 	
- .gallery-img {
+ figure {
 	 width: 29.33333333%;
 	 }
 }
@@ -36,7 +36,7 @@ only screen and (max-device-width : 680px) {
 @media only screen and (max-width : 455px),
 only screen and (max-device-width : 455px) {
 	
- .gallery-img {
+ figure {
 	 width: 44%;
 	 }
 }
@@ -44,7 +44,7 @@ only screen and (max-device-width : 455px) {
 @media only screen and (max-width : 380px),
 only screen and (max-device-width : 380px) {
 	
- .gallery-img {
+ figure {
 	 width: 88%;
 	 }
 }
