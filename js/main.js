@@ -17,7 +17,7 @@ $('body').append($overlay);
 //Add caption
 
 // Capture the click event on a link to an image 
-$('#imageGallery figure a').click(function(event) {
+$('#imageGallery a').click(function(event) {
 	event.preventDefault();//prevent click opening image
 	var imagehref = $(this).attr('href');
 	//Update the overlay with the larger image
@@ -28,7 +28,9 @@ $('#imageGallery figure a').click(function(event) {
 	
 	//Update the overlay with the larger image
 	//Get alt attr to set caption. 
-	$(this).attr("figcaption");
+	   //Get child's alt tag and set as caption
+	var captionText = $(this).children("img").attr("title");
+  $caption.text(captionText);
 });
 
 //When overlay is clicked

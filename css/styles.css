@@ -1,8 +1,10 @@
 
 
 header {
-	height: 100px;
+	height: 200px;
+	position: fixed;
 }
+
 
 .container {
 	max-width: 980px;
@@ -11,11 +13,11 @@ header {
 }
 
 
-figure img {
+li img {
 	max-width: 100%;
 }
 
-figure {
+li {
 	float: left; 
 	max-width: 100%;
 	width: 22%;
@@ -28,9 +30,10 @@ figure {
 	margin: 0 auto;
 }
 
-figcaption {
-	display: none;
+ul {
+	list-style-type: none;
 }
+
 
 /* Style the overlay/lightbox */
 
@@ -50,7 +53,11 @@ figcaption {
 }
   
 #overlay p {
-  color: #fff;
+  color: #d3d3d3;
+  max-width: 70%;
+  margin: 60px auto;
+  line-height: 1.5;
+  text-align: left;
 }
 
 
@@ -58,7 +65,7 @@ figcaption {
 @media only screen and (max-width : 680px),
 only screen and (max-device-width : 680px) {
 	
- figure {
+ li {
 	 width: 29.33333333%;
 	 }
 }
@@ -66,7 +73,7 @@ only screen and (max-device-width : 680px) {
 @media only screen and (max-width : 455px),
 only screen and (max-device-width : 455px) {
 	
- figure {
+ li {
 	 width: 44%;
 	 }
 }
@@ -74,7 +81,7 @@ only screen and (max-device-width : 455px) {
 @media only screen and (max-width : 380px),
 only screen and (max-device-width : 380px) {
 	
- figure {
+ li {
 	 width: 88%;
 	 }
 }
