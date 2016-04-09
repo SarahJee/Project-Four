@@ -38,3 +38,13 @@ $overlay.click(function(){
 //Hide overlay	
 	$overlay.hide();
 });
+
+//Capture user text input 
+
+//Check to see if entered text matches any of titles 
+	//Loop through each list item(img) 
+	//Check to see if entered text matches
+	
+	//If it matches - do nothing
+	
+	//If it doesn't match - hide image (JQuery)

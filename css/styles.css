@@ -1,16 +1,46 @@
 
 
-header {
-	height: 200px;
-	position: fixed;
-}
-
 
 .container {
 	max-width: 980px;
 	overflow: hidden;
-	margin: 0 auto;
+	margin: 140px auto;
 }
+
+#fixed {
+	height: 140px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #fafafa;
+}
+
+#search {
+	position: relative;
+	left: 50%;
+	top: 50%;
+	margin-left: -180px;
+	margin-top: -50px;
+}
+
+input {
+	width: 400px;
+	padding: 10px;
+	font-size: 16px;	
+}
+
+input[type=search] {
+    border: 2px solid #a8a8a8;
+    border-radius: 4px;
+}
+
+
+input[type=search]:focus{
+  outline:0;
+  background-color:#f0ffff;
+  border-color:#5fb4b4;
+  }
+
 
 
 li img {
@@ -35,6 +65,8 @@ ul {
 }
 
 
+
+
 /* Style the overlay/lightbox */
 
 #overlay {
@@ -54,7 +86,7 @@ ul {
   
 #overlay p {
   color: #d3d3d3;
-  max-width: 70%;
+  max-width: 50%;
   margin: 60px auto;
   line-height: 1.5;
   text-align: left;
