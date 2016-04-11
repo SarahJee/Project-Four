@@ -39,6 +39,10 @@ $overlay.click(function(){
 	$overlay.hide();
 });
 
+
+
+
+
 //Capture user text input 
 
 //Check to see if entered text matches any of titles 

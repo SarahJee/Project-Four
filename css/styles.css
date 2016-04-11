@@ -2,8 +2,7 @@
 
 
 .container {
-	max-width: 980px;
-	overflow: hidden;
+	max-width: 1040px;
 	margin: 140px auto;
 }
 
@@ -19,12 +18,12 @@
 	position: relative;
 	left: 50%;
 	top: 50%;
-	margin-left: -180px;
+	margin-left: -230px;
 	margin-top: -50px;
 }
 
 input {
-	width: 400px;
+	width: 460px;
 	padding: 10px;
 	font-size: 16px;	
 }
@@ -42,7 +41,6 @@ input[type=search]:focus{
   }
 
 
-
 li img {
 	max-width: 100%;
 }
@@ -50,8 +48,8 @@ li img {
 li {
 	float: left; 
 	max-width: 100%;
-	width: 22%;
-	margin: 1.5%;
+	width: 19.230769%; /* 200/1040 *100 */
+	margin: 2.884615%; /* 30/1040 *100 */
 }
 
 #overlay img {
@@ -60,11 +58,11 @@ li {
 	margin: 0 auto;
 }
 
+
 ul {
 	list-style-type: none;
+	padding-left: 0;
 }
-
-
 
 
 /* Style the overlay/lightbox */
@@ -94,11 +92,11 @@ ul {
 
 
 
-@media only screen and (max-width : 680px),
-only screen and (max-device-width : 680px) {
+@media only screen and (max-width : 632px),
+only screen and (max-device-width : 632px) {
 	
  li {
-	 width: 29.33333333%;
+	 width: 27.57%;
 	 }
 }
 
