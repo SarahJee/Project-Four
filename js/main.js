@@ -56,7 +56,7 @@ $overlay.click(function(){
  $img.each(function() {  //Loop though each image in $ imgs using .each() to run an anonymous funciton on each one. 
 	 cache.push({		 //Add an object to the cashe array with push()
 		 element: this,	 // This image - objects element proprety holds ref to the img element
-		 text: this.title.trim().toLowerCase() //Its alt text - text property hold alt text - remove spaces and change case. 
+		 text: this.title.trim().toLowerCase() //Its title text - text property hold titlety text - remove spaces and change case. 
 	 });
  });
  
