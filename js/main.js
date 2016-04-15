@@ -44,7 +44,7 @@ $overlay.click(function(){
 	
 	
 	
-	
+//=======================SEARCH FUNCTION=====================//	
 	
 //Set up the cache object	
 	
@@ -83,12 +83,10 @@ $overlay.click(function(){
 }());
 
 
-//Capture user text input 
+//=======================ADD NAVIGATION=====================//	
 
-//Check to see if entered text matches any of titles 
-	//Loop through each list item(img) 
-	//Check to see if entered text matches
-	
-	//If it matches - do nothing
-	
-	//If it doesn't match - hide image (JQuery)
+
+
+
+
+
