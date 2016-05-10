@@ -100,13 +100,33 @@ ul {
 
 #btnPrev {
   position: absolute;
-   float: left;
-   top: 25%;
+  float: left;
+  top: 25%;
   left: 3%;
   font-size: 1.5em;
   background-color: rgba(0,0,0,0.0);
-  color: grey;
-  border: none;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border:none;
+  background-color: rgba(127, 127, 127, 0.45);
+ 
+}
+
+#btnNext{
+  position: absolute;
+  float: right;
+  top: 25%;
+  right: 3%;
+  font-size: 1.5em;
+  background-color: rgba(0,0,0,0.0);
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border:none;
+  background-color: rgba(127, 127, 127, 0.45);
 }
 
 
@@ -119,7 +139,6 @@ only screen and (max-device-width : 632px) {
 	 
 #overlay img {
 	max-width: 90%;
-    padding: 5%;
   }
 }
 
