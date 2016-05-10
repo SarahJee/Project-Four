@@ -44,19 +44,21 @@ input[type=search]:focus{
 li img {
 	max-width: 100%;
 	border: 2px solid #a8a8a8;
+	border-radius: 50%;
 }
+
+li img:hover {
+	border: solid 2px #5fb4b4;
+	border-radius: 0;
+	-webkit-transition: all ease 2s; /* Safari */
+    transition:all 0.3s ease;
+	}
 
 li {
 	float: left; 
 	max-width: 100%;
 	width: 19.230769%; /* 200/1040 *100 */
 	margin: 2.884615%; /* 30/1040 *100 */
-}
-
-#overlay img {
-	display: block;
-	max-width: 780px;
-	margin: 0 auto;
 }
 
 
@@ -80,11 +82,14 @@ ul {
 }  
 
 #overlay img {
-  margin-top: 10%;
+	display: block;
+	max-width: 780px;
+	margin: 10% auto 0;
+	border: solid 2px #fff;
 }
   
 #overlay p {
-  color: #d3d3d3;
+  color: #fff;
   margin: 60px auto;
   line-height: 1.5;
   text-align: center;
