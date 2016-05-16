@@ -98,13 +98,12 @@ ul {
 
 /* Navigation */
 
-#btnPrev {
+#prev {
   position: absolute;
   float: left;
   top: 25%;
   left: 3%;
   font-size: 1.5em;
-  background-color: rgba(0,0,0,0.0);
   color: #fff;
   border-radius: 50%;
   width: 40px;
@@ -114,13 +113,12 @@ ul {
  
 }
 
-#btnNext{
+#next{
   position: absolute;
   float: right;
   top: 25%;
   right: 3%;
   font-size: 1.5em;
-  background-color: rgba(0,0,0,0.0);
   color: #fff;
   border-radius: 50%;
   width: 40px;
