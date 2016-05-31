@@ -24,12 +24,17 @@ function clickNext(event) {
 
 function showOverImg() {
         var imagehref = $(currentImg).find('a').attr('href');
-        var caption = $(currentImg).find("img").attr('title');
-        var video = $(currentVideo).find("img").attr('data');
+        var caption = $(currentImg).find('img').attr('title');
+        var video = $(currentImg).find('a').attr('data');
         
-        if (is data - show it) else show img
-        //Update the overlay with larger image
-        $("#overlay-img").attr("src", imagehref);
+        if (imagehref === attr('href')) {
+	     	//Update the overlay with larger image
+		 	$("#overlay-img").attr("src", imagehref);
+  			} else {
+	  		//Update the overlay with larger video	
+	  		$("#overlay-img").attr("src", video);
+  			}
+
         //Add the caption
         $("#caption").text(caption);
         //Show the overlay
