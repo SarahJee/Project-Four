@@ -27,9 +27,10 @@ function showOverImg() {
         var caption = $(currentImg).find('img').attr('title');
         var video = $(currentImg).find('a').attr('data');
         
-        if (imagehref === attr('href')) {
+        
+        if ($(this).attr('src') = ('href')) {
 	     	//Update the overlay with larger image
-		 	$("#overlay-img").attr("src", imagehref);
+		 	$("#overlay-img").attr("src", imagehref);	 	
   			} else {
 	  		//Update the overlay with larger video	
 	  		$("#overlay-img").attr("src", video);
