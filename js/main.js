@@ -28,7 +28,7 @@ function showOverImg() {
         var video = $(currentImg).find('a').attr('data');
         
         
-        if ($(this).attr('src') = ('href')) {
+        if ($(this).attr('src') === $(this).attr('href')) {
 	     	//Update the overlay with larger image
 		 	$("#overlay-img").attr("src", imagehref);	 	
   			} else {
