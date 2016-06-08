@@ -95,7 +95,7 @@ ul {
   padding: 0 30px;
 }
 
-#video {
+iframe#video {
   display: none; /*Initial state is hidden*/
 }
 
