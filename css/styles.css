@@ -95,6 +95,10 @@ ul {
   padding: 0 30px;
 }
 
+#video {
+  display: none; /*Initial state is hidden*/
+}
+
 /* Navigation */
 
 #prev {
