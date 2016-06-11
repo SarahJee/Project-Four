@@ -24,15 +24,17 @@ function clickNext(event) {
 
 function showOverImg() {
         var imagehref = $(currentImg).find('a').attr('href');
-        var caption = $(currentImg).find('img').attr('title');        
+        var caption = $(currentImg).find('img').attr('title');
+                
         
         if ($(this).attr('src') === $(this).attr('href')) {
 	     	//Update the overlay with larger image
 		 	$("#overlay-img").attr("src", imagehref);
 		 	$('#video').hide();	 	
+		 	$("#overlay-img").show();
   			} else {
 	  		//Update the overlay with larger video	
-	  		$("#overlay-img").attr("src", iframe);
+	  		$("#overlay-img").hide();
 	  		$('#video').show();
   			}
 
@@ -40,7 +42,7 @@ function showOverImg() {
         $("#caption").text(caption);
         //Show the overlay
         $('#overlay').show();
-        //Show the video
+
         
     }
     
