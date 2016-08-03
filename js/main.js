@@ -7,35 +7,46 @@ var imgList = ('#imageGallery a');
 // Store current image
 var currentImg;
 
+
 // Add function to prev/next arrows
 function clickPrev(event) {
+	
+	var galleryType;
+	if //is photo or video change gallery type to photo or video//
     event.stopPropagation();
     currentImg = currentImg.prev();
-    showOverImg();
+    showOverImg(galleryType);
 }
 
 // Add function to prev/next arrows
 function clickNext(event) {
+	
+	var galleryType;
+	if //is photo or video change gallery type to photo or video//
     event.stopPropagation();
     currentImg = currentImg.next();
-    showOverImg();
+    
+    
+    showOverImg(galleryType);
 }
 
 
-function showOverImg() {
+function showOverImg(galleryType) {
         var imagehref = $(currentImg).find('a').attr('href');
         var caption = $(currentImg).find('img').attr('title');
                 
         
-        if ($(this).attr('src') === $(this).attr('href')) {
+        if (galleryType === 'photo') {
 	     	//Update the overlay with larger image
 		 	$("#overlay-img").attr("src", imagehref);
 		 	$('#video').hide();	 	
 		 	$("#overlay-img").show();
+		 	console.log('photo');
   			} else {
 	  		//Update the overlay with larger video	
 	  		$("#overlay-img").hide();
 	  		$('#video').show();
+	  		console.log('video');
   			}
 
         //Add the caption
@@ -50,7 +61,8 @@ function showOverImg() {
 $('#imageGallery a').click(function(event) {
     event.preventDefault(); //prevent click opening image
     currentImg = $(this).parent(); //make currentImg a jQuery object (so can appply .next/.prev etc
-    showOverImg();
+    if //is photo or video change gallery type to photo or video//
+    showOverImg(galleryType);
 });
 
 
