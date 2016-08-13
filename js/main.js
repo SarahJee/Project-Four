@@ -12,10 +12,10 @@ var currentImg;
 function clickPrev(event) {
 	
 	var galleryType;
-	//if is photo or video change gallery type to photo or video//
+	//if is photo or video change gallery type to photo or video
     event.stopPropagation();
     currentImg = currentImg.prev();
-        if (currentImg[0] === 'li.li-video') {
+        if (currentImg.hasClass('li-video')) {
 		var galleryType = 'video';	    
     	} else {
 	    	var galleryType = 'photo';
@@ -27,11 +27,10 @@ function clickPrev(event) {
 function clickNext(event) {
 	
 	var galleryType;
-	//if is photo or video change gallery type to photo or video//
+	//if is photo or video change gallery type to photo or video 
     event.stopPropagation();
     currentImg = currentImg.next();
-    console.log(currentImg);
-        if (currentImg[0] === 'li.li-video') {
+        if (currentImg.hasClass('li-video')) {
 		var galleryType = 'video';	    
     	} else {
 	    	var galleryType = 'photo';
