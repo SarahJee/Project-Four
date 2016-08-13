@@ -12,9 +12,14 @@ var currentImg;
 function clickPrev(event) {
 	
 	var galleryType;
-	if //is photo or video change gallery type to photo or video//
+	//if is photo or video change gallery type to photo or video//
     event.stopPropagation();
     currentImg = currentImg.prev();
+        if (currentImg[0] === 'li.li-video') {
+		var galleryType = 'video';	    
+    	} else {
+	    	var galleryType = 'photo';
+    	}
     showOverImg(galleryType);
 }
 
@@ -22,11 +27,15 @@ function clickPrev(event) {
 function clickNext(event) {
 	
 	var galleryType;
-	if //is photo or video change gallery type to photo or video//
+	//if is photo or video change gallery type to photo or video//
     event.stopPropagation();
     currentImg = currentImg.next();
-    
-    
+    console.log(currentImg);
+        if (currentImg[0] === 'li.li-video') {
+		var galleryType = 'video';	    
+    	} else {
+	    	var galleryType = 'photo';
+    	}
     showOverImg(galleryType);
 }
 
@@ -61,8 +70,13 @@ function showOverImg(galleryType) {
 $('#imageGallery a').click(function(event) {
     event.preventDefault(); //prevent click opening image
     currentImg = $(this).parent(); //make currentImg a jQuery object (so can appply .next/.prev etc
-    if //is photo or video change gallery type to photo or video//
-    showOverImg(galleryType);
+    //is photo or video change gallery type to photo or video//
+    if (currentImg.nodeName === 'IFRAME') {
+		var galleryType = 'video';	    
+    	} else {
+	    	var galleryType = 'photo';
+    	}
+    (showOverImg(galleryType));
 });
 
 
