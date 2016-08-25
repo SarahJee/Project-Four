@@ -99,6 +99,10 @@ iframe#video {
   display: none; /*Initial state is hidden*/
 }
 
+iframe {
+	border: none;
+}
+
 /* Navigation */
 
 #prev {

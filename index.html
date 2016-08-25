@@ -12,10 +12,9 @@
 	
   	<header>
 
-	  	<div id="fixed">  
+	  <div id="fixed">  
 		  	
 			  <input type="search" id="search" placeholder="Search..." />
-	
 	  </div>
   	</header>
   
@@ -97,35 +96,25 @@
 	  <li>	
 	  	<a href="">	
 		  	<img src="img/thumbs/13.jpg" alt="Video of Nature's Path" title="We're all farmers. You choose what you eat!" width="200">
-	  </li></a>
-
-
-	  </div><!- End imageGallery div->
+	  	</a>
+	  </li>
+	</ul>
  
 <div id="overlay" onclick="hideOverlay()">
-<iframe src="https://player.vimeo.com/video/132471949" width="783" height="490" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen data="video" id="video"></iframe>
-
-<img id="overlay-img">
-  <p id="caption"></p>
-  <button id="prev" onclick="clickPrev(event)"> < </button>
-  <button id="next" onclick="clickNext(event)"> > </button> 
+	<iframe src="https://player.vimeo.com/video/132471949" width="783" height="490" allowfullscreen id="video"></iframe>
+	
+	<img id="overlay-img" alt="Dark background overlay hiding thumbnail images" src="">
+	  <p id="caption"></p>
+	  <button id="prev" onclick="clickPrev(event)"> < </button>
+	  <button id="next" onclick="clickNext(event)"> > </button> 
 </div>
 
 	
-	</div><!- End container div->	
+	</div><!-- End container div -->	
   	
-  	
-  
-  	<!-- jQuery version must be >= 1.8.0; -->
+<!-- jQuery version must be >= 1.8.0; -->
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
-    
-
-  
-
-
-  	
-  	
-  	
+ 	
   </body>
 </html>
